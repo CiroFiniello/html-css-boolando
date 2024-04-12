@@ -1,0 +1,18 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main{
+  padding: 3rem;
+}
+section.products{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+section.products>article{
+width: calc(100%/3) - 3rem;
+background-color: white;
+height: 400px;
+}
