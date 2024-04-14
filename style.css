@@ -3,16 +3,128 @@
   padding: 0;
   box-sizing: border-box;
 }
+.flex{
+  display: flex;
+  align-items: center;
+}
+.flex-btw{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ul{
+  list-style-type: none;
+}
+header nav li{
+  margin-right: 1rem;
+}
+header{
+  background-color: rgb(225, 105, 0);
+  color: white;
+  padding: 1rem 0;
+}
+div.main-logo > img{
+  height: 50px;
+}
 main{
-  padding: 3rem;
+  padding: 5rem;
+}
+section{
+  padding-top: 5rem;
 }
 section.products{
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 2rem;
 }
-section.products>article{
-width: calc(100%/3) - 3rem;
-background-color: white;
+section.products > article.product{
+width: calc((100% / 3) - 3rem);
 height: 400px;
+background-color:#eeeeee;
+}
+article.product .card-img img{
+  height: 450px;
+  width: 100%;
+}
+article.product .card-img img.primary{
+display: inline-block;
+}
+article.product .card-img img.secondary{
+  display: none;
+}
+article.product:hover .card-img img.secondary{
+  display: inline-block;
+}
+article.product:hover .card-img img.primary{
+  display: none;
+}
+article.product .card-info{
+  font-size: .7rem;
+}
+article.product .card-img{
+  position: relative;
+}
+div.tags {
+position: absolute;
+bottom: .9rem;
+}
+
+div.favourite{
+  height: 50px;
+  width: 50px;
+background-color: white;
+text-align: center;
+  font-size: 3rem;
+  top: .5rem;
+  right: 0;
+  position: absolute;
+}
+article.product .info-product{
+  text-transform:  uppercase;
+  font-weight: bold;
+}
+article.product .info-price{
+  color: red;
+  font-weight: bold;
+}
+article.product .info-old-price{
+  color: black;
+  font-weight: lighter;
+  text-decoration: line-through;
+}
+.tags span{
+  padding: .5rem;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
+.tags .tag-discount {
+  background-color: red;
+}
+footer{
+  background-color: rgb(0, 0, 26);
+  color: white;
+}
+.footer-container{
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* .footer-right{
+ position: absolute;
+ right: 0;
+ top: 1;
+} */
+footer ul li{
+  display: inline-block;
+  margin-right: .5rem;
+  list-style-type: none;
+ font-weight: lig;
+}
+footer li{
+  list-style-type: none;
 }
